@@ -67,10 +67,33 @@
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            margin: 10px 0;
         }
 
         .button:hover {
             background-color: #45a049;
+        }
+
+        .highlight {
+            background-color: #FF6F61;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .highlight:hover {
+            background-color: #e45749;
+        }
+
+        /* Highlight Personal Project Section */
+        .personal-project {
+            background-color: #e6ffe6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* Responsive Design */
@@ -129,24 +152,30 @@
         </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section>
-        <h2>Projects</h2>
-        <h3><a href="http://angular-money-app.s3-website.us-east-2.amazonaws.com/transactions" target="_blank">Money-app-fullstack deployed on AWS</a></h3>
+    <!-- Highlighted Personal Project Section -->
+    <section class="personal-project">
+        <h2>Highlighted Personal Project</h2>
+        <h3><a href="http://angular-money-app.s3-website.us-east-2.amazonaws.com/transactions" target="_blank" class="highlight">Money-app-fullstack deployed on AWS</a></h3>
         <ul>
             <li>Beanstalk (Spring Boot)</li>
             <li>RDS for MySQL</li>
             <li>S3 static host Angular</li>
         </ul>
-        <h3><a href="https://github.com/BellamyPhan/employee-management-system" target="_blank">Full-Stack Employee Management System</a></h3>
+        <a href="http://angular-money-app.s3-website.us-east-2.amazonaws.com/transactions" target="_blank" class="highlight">View the Project</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>Other Projects</h2>
+        <h3><a href="https://github.com/BellamyPhan/employee-management-system" target="_blank" class="button">Full-Stack Employee Management System</a></h3>
         <ul>
             <li>Built a full-stack CRUD web application using Angular, Java Spring Boot, and MongoDB Atlas.</li>
         </ul>
-        <h3><a href="https://github.com/BellamyPhan/tetris-game" target="_blank">Tetris Game (Java AWT & Swing)</a></h3>
+        <h3><a href="https://github.com/BellamyPhan/tetris-game" target="_blank" class="button">Tetris Game (Java AWT & Swing)</a></h3>
         <ul>
             <li>Developed a graphical Java-based Tetris game using Java AWT and Swing.</li>
         </ul>
-        <h3><a href="https://github.com/BellamyPhan/money-budget-app" target="_blank">Money Budget App (JavaFX)</a></h3>
+        <h3><a href="https://github.com/BellamyPhan/money-budget-app" target="_blank" class="button">Money Budget App (JavaFX)</a></h3>
         <ul>
             <li>Created a banking and budget tracking application using JavaFX.</li>
             <li>Refactoring into a full-stack web app with Angular frontend, Java Spring backend, and MongoDB hosted on AWS Elastic Beanstalk.</li>
